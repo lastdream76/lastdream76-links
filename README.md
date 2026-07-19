@@ -46,7 +46,7 @@ portfolio/
 
 ### License
 
-All Rights Reserved (ARR)
+MIT License
 
 ---
 
@@ -92,4 +92,4 @@ portfolio/
 
 ### Лицензия
 
-All Rights Reserved (ARR)
+MIT License
