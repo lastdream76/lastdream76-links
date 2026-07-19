@@ -1,0 +1,63 @@
+/* Theme variables */
+:root{
+  --bg: #fff8b0; /* light yellow */
+  --black: #0a0a0a;
+  --muted: rgba(255,248,176,0.85);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+  background:var(--bg);
+  color:var(--black);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:3rem;
+}
+
+.container{
+  position:relative;
+  width:min(880px,96%);
+  background:var(--black);
+  color:var(--bg);
+  border-radius:18px;
+  padding:2.25rem;
+  box-shadow:0 12px 40px rgba(10,10,10,0.25);
+  border:1px solid rgba(255,248,176,0.06);
+  text-align:left;
+}
+
+.lang-toggle{
+  position:absolute;left:18px;top:18px;border-radius:10px;padding:6px 10px;background:transparent;color:var(--bg);border:1px solid rgba(255,255,255,0.06);font-weight:700;cursor:pointer;transition:transform .12s ease, background .12s ease,color .12s ease
+}
+.lang-toggle:hover{transform:translateY(-3px);background:var(--bg);color:var(--black);border-color:rgba(0,0,0,0.06)}
+
+.header-row{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+.logo{
+  width:56px;height:56px;border-radius:12px;background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--black);font-weight:700;font-size:1.05rem
+}
+
+.hero{margin-bottom:1rem}
+.name{font-size:2.6rem;margin:0}
+.tag{margin:0.6rem 0 0;color:var(--muted);font-size:1.05rem;line-height:1.5}
+
+.links{display:flex;flex-direction:column;gap:0.75rem;margin:1.5rem 0}
+.btn{
+  display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1rem;border-radius:12px;text-decoration:none;font-weight:700;
+  background:transparent;color:var(--bg);border:1px solid rgba(255,255,255,0.06);
+  transition:transform .12s ease, background .12s ease, color .12s ease;
+}
+.btn:hover{transform:translateY(-4px);background:var(--bg);color:var(--black);border-color:rgba(0,0,0,0.06)}
+.btn-icon{width:24px;height:24px;flex-shrink:0}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+
+.footer{margin-top:1.25rem;color:rgba(255,248,176,0.7);font-size:0.95rem}
+
+@media (max-width:720px){
+  .container{padding:1.25rem}
+  .name{font-size:1.6rem}
+  .logo{width:44px;height:44px}
+}
