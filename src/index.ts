@@ -1,5 +1,6 @@
 const githubUrl = 'https://github.com/aleks12ser';
 const modrinthUrl = 'https://modrinth.com/user/lastdream76';
+const curseforgeUrl = 'https://www.curseforge.com/members/lastdream76/projects';
 const discordUrl = 'https://discord.gg/qS9nBYCm4w';
 
 document.title = 'Portfolio — Aleks';
@@ -25,6 +26,8 @@ app.innerHTML = `
     </a>
 
     <a class="btn" href="${modrinthUrl}" target="_blank" rel="noopener noreferrer">Modrinth</a>
+
+    <a class="btn" href="${curseforgeUrl}" target="_blank" rel="noopener noreferrer">CurseForge</a>
 
     <a class="btn" href="${discordUrl}" target="_blank" rel="noopener noreferrer">Discord</a>
   </section>

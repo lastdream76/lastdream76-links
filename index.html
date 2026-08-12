@@ -35,6 +35,13 @@
         <span class="label" id="label-modrinth">Modrinth — my mods</span>
       </a>
 
+      <a class="btn" id="link-curseforge" href="https://www.curseforge.com/members/lastdream76/projects" target="_blank" rel="noopener noreferrer">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <path d="M18.326 9.2145S23.2261 8.4418 24 6.1882h-7.5066V4.4H0l2.0318 2.3576V9.173s5.1267 -0.2665 7.1098 1.2372c2.7146 2.516 -3.053 5.917 -3.053 5.917L5.0995 19.6c1.5465 -1.4726 4.494 -3.3775 9.8983 -3.2857 -2.0565 0.65 -4.1245 1.6651 -5.7344 3.2857h10.9248l-1.0288 -3.2726s-7.918 -4.6688 -0.8336 -7.1127z" stroke-width="1"/>
+        </svg>
+        <span class="label" id="label-curseforge">CurseForge — projects</span>
+      </a>
+
       <a class="btn" id="link-discord" href="https://discord.gg/qS9nBYCm4w" target="_blank" rel="noopener noreferrer">
         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.865-.607 1.25a18.27 18.27 0 00-5.487 0c-.163-.39-.401-.875-.607-1.25a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.042-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.294.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.009c.12.098.246.198.373.295a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.352.699.764 1.365 1.225 1.994a.076.076 0 00.084.028 19.86 19.86 0 006.002-3.03.077.077 0 00.032-.054c.5-4.917-.838-9.229-3.549-13.043a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-.965-2.157-2.156 0-1.193.974-2.157 2.157-2.157 1.193 0 2.156.964 2.156 2.157 0 1.19-.963 2.156-2.156 2.156zm7.975 0c-1.183 0-2.157-.965-2.157-2.156 0-1.193.974-2.157 2.157-2.157 1.193 0 2.157.964 2.157 2.157 0 1.19-.964 2.156-2.157 2.156z"/></svg>
         <span class="label" id="label-discord">Discord — contact</span>
@@ -55,6 +62,7 @@
           tag: 'Hi! I create various Python projects, make Minecraft mods, and some phone apps in Kotlin. I maintain projects on GitHub. Everything important is in this section: repositories, mods, and how to contact me on Discord. Links below.',
           github: 'GitHub — repositories',
           modrinth: 'Modrinth — my mods',
+          curseforge: 'CurseForge — projects',
           discord: 'Discord — contact',
           email: 'Email — lastdream76.work@gmail.com',
           footer: 'Contact me - lastdream76.work@gmail.com',
@@ -66,6 +74,7 @@
           tag: 'Привет! Я создаю разные проекты на Python, делаю моды для Minecraft и некоторые программы на телефон на Kotlin. Веду проекты на GitHub. Всё важное — в этом блоке: репозитории, моды и как связаться в Discord. Ссылки ниже.',
           github: 'GitHub — репозитории',
           modrinth: 'Modrinth — мои моды',
+          curseforge: 'CurseForge — проекты',
           discord: 'Discord — связаться',
           email: 'Почта — lastdream76.work@gmail.com',
           footer: 'Contact me - lastdream76.work@gmail.com',
@@ -78,6 +87,7 @@
         tag: document.getElementById('tag'),
         labelGithub: document.getElementById('label-github'),
         labelModrinth: document.getElementById('label-modrinth'),
+        labelCurseforge: document.getElementById('label-curseforge'),
         labelDiscord: document.getElementById('label-discord'),
         footer: document.getElementById('footer'),
         toggle: document.getElementById('lang-toggle')
@@ -93,6 +103,7 @@
         els.tag.textContent = t.tag;
         els.labelGithub.textContent = t.github;
         els.labelModrinth.textContent = t.modrinth;
+        els.labelCurseforge.textContent = t.curseforge;
         els.labelDiscord.textContent = t.discord;
         els.footer.textContent = t.footer;
         els.toggle.textContent = t.toggleLabel;
